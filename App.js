@@ -1,20 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Role from './src/Screen/Role';
-import Personal_details from './src/Screen/Personal_details';
-import OTP from './src/Screen/OTP';
-import Cart from './src/Screen/Cart';
-import Navigation from './src/Components/Navigation';
+import { ScrollView, Text } from 'react-native';
+import Blank_Screen from './src/Screen/Blank_Screen';
+import Categories from './src/Screen/Catergories';
+import DashBoardScreen from './src/Screen/dashBoardScreen';
+import LocationScreen from './src/Screen/locationScreen';
+
 export default function App() {
   return (
     <>
       <StatusBar style="auto" />
-      {/* <Role /> */}
-      {/* <Personal_details /> */}
-      {/* <OTP /> */}
-      {/* <Navigation /> */}
-      <Cart />
+      {/* <DashBoardScreen /> */}
+      {/* <Blank_Screen /> */}
+      {/* <LocationScreen /> */}
+      <Categories />
     </>
   );
 }
