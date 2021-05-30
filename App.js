@@ -1,21 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import Language from './src/Screen/Language';
+import Recipt from './src/Screen/Recipt';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Pradumn badwa sala</Text>
+    <>
       <StatusBar style="auto" />
-    </View>
+      <Language />
+      {/* <Recipt /> */}
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
