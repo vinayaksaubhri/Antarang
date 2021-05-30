@@ -1,6 +1,5 @@
 import React from 'react';
-import { View, Text, TextInput, Button, TouchableOpacity, KeyboardAvoidingView, ScrollView } from 'react-native';
-// import {} from 'react-native-paper';
+import { View, TouchableOpacity } from 'react-native';
 import {
   Upper_box,
   Input_box,
@@ -35,7 +34,6 @@ const Personal_details = () => {
       <Bottom_box>
         <View>
           <Bottom_text>Donate as anonymous</Bottom_text>
-          {/* <RadioButton /> */}
         </View>
         <TouchableOpacity onPress={() => console.warn('clicked')}>
           <Donate_button>

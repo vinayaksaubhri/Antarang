@@ -31,11 +31,7 @@ const OTP = (props) => {
                 <Input keyboardType="numeric" placeholder="1234567895" />
               </View>
               <View>
-                <Picker
-                  style={{ width: 322, height: 45, alignSelf: 'center' }}
-                  // selectedValue={selectedLanguage}
-                  // onValueChange={(itemValue, itemIndex) => setSelectedLanguage(itemValue)}
-                >
+                <Picker style={{ width: 322, height: 45, alignSelf: 'center' }}>
                   <Picker.Item label="Employed" value="employed" />
                   <Picker.Item label="Unemployed" value="unemployed" />
                 </Picker>
@@ -51,7 +47,6 @@ const OTP = (props) => {
               </View>
               <TouchableOpacity onPress={() => props.navigation.navigate('Cart')}>
                 <Button Title="Continue" />
-                {/* <Button title="Continue" onPress={() => props.navigation.navigate('Cart')} /> */}
               </TouchableOpacity>
             </Lower_box>
           </ScrollView>

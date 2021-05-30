@@ -28,8 +28,6 @@ export const Sub_header = styled.Text`
 export const Input_box = styled.View`
   flex: 2;
   flex-wrap: wrap;
-  /* background-color: red; */
-  /* align-items: center; */
   justify-content: space-evenly;
   padding-bottom: 20%;
 `;
@@ -55,7 +53,6 @@ export const Bottom_box = styled.View`
   flex: 2;
   flex-wrap: wrap;
   background-color: pink;
-  /* align-items: center; */
   justify-content: space-around;
   padding-bottom: 15%;
 `;
@@ -74,7 +71,6 @@ export const Donate_button = styled.View`
   align-items: center;
   justify-content: center;
   left: 57%;
-  /* top: 576px; */
   background: #0172ff;
   border-radius: 6px;
 `;
