@@ -1,4 +1,3 @@
-
 import styled from 'styled-components';
 import Constants from 'expo-constants';
 import { Color } from './color';
@@ -8,6 +7,7 @@ export const Global_container = styled.View`
   flex: 1;
   flex-direction: column;
   justify-content: space-evenly;
+  padding-bottom: 30px;
 `;
 export const Heading = styled.Text`
   font-size: 16px;
@@ -17,7 +17,7 @@ export const Heading = styled.Text`
 `;
 
 export const ButtonView = styled.View`
-  width: 86%;
+  width: 323px;
   height: 55px;
   background: ${Color.Blue};
   border-radius: 8px;
@@ -44,4 +44,3 @@ export const Search_view = styled.View`
   background-color: ${Color.White};
   border-radius: 6px;
 `;
-

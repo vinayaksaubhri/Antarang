@@ -1,15 +1,19 @@
 import styled from 'styled-components';
 import { Color } from './color';
+import Constants from 'expo-constants';
 
 export const Upper_flex = styled.View`
   background-color: ${Color.White};
-  flex: 1;
 `;
-
-export const Lower_flex = styled.View`
-  flex: 3;
+export const Recipt_container = styled.View`
+  flex: 1;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20%;
-  background-color: ${Color.White};
+`;
+export const Lower_flex = styled.View`
+  height: 100px;
+  width: 100px;
+  background-color: ${Color.Black};
+  justify-content: center;
+  align-items: center;
 `;

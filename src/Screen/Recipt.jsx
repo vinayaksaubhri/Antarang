@@ -1,16 +1,17 @@
 import React from 'react';
 import { Image } from 'react-native';
 import { Global_container } from '../../style/global';
-import { Upper_flex, Lower_flex } from '../../style/recipt';
+import { Upper_flex, Lower_flex, Recipt_container } from '../../style/recipt';
 import Button from '../Components/Button';
+import ProfileName from '../Components/ProfileName';
 
 const Recipt = () => {
   return (
     <Global_container>
-      <Upper_flex></Upper_flex>
-      <Lower_flex>
-        <Image source={require('../../assets/Recipt.png')} />
-      </Lower_flex>
+      <ProfileName color="black" />
+      <Recipt_container>
+        <Image source={require('../../assets/Images/Recipt.png')} resizeMode="center" />
+      </Recipt_container>
       <Button Title="Done" />
     </Global_container>
   );
