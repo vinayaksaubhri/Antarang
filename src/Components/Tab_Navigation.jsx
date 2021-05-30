@@ -12,11 +12,11 @@ const Tab_Navigation = () => {
 
   return (
     <NavigationContainer>
-      <Tab.Navigator initialRouteName="Home" screenOptions={{ headerShown: false }}>
+      <Tab.Navigator initialRouteName="Home">
         <Tab.Screen name="Home" component={Home} />
         <Tab.Screen name="Passbook" component={Passbook} />
         <Tab.Screen name="Support" component={Support} />
-        <Tab.Screen name="Notification" component={Notification} />>
+        <Tab.Screen name="Notification" component={Notification} />
       </Tab.Navigator>
     </NavigationContainer>
   );

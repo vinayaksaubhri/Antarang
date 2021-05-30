@@ -7,7 +7,7 @@ import { LocationText, LocationDes, LogoName, LogoContainer, TextContainer } fro
 import Button from '../Components/Button';
 import DontataSvg from '../../assets/Svg/DontateSvg';
 
-const locationScreen = () => {
+const locationScreen = (props) => {
   return (
     <>
       <Global_container>
@@ -23,7 +23,9 @@ const locationScreen = () => {
             We will need your location so that right govt {'\n'}schemes can be applied to your profile
           </LocationDes>
         </TextContainer>
-        <Button Title="Use my current location" />
+        <TouchableOpacity onPress={() => props.navigation.navigate('OTP')}>
+          <Button Title="Use my current location" />
+        </TouchableOpacity>
       </Global_container>
     </>
   );

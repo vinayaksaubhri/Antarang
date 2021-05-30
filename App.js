@@ -8,6 +8,8 @@ import Catergories from './src/Screen/Catergories';
 import DashBoardScreen from './src/Screen/DashBoardScreen';
 import LocationScreen from './src/Screen/LocationScreen';
 import Stack_Navigation from './src/Components/Stack_Navigation';
+import Tab_Navigation from './src/Components/Tab_Navigation';
+
 export default function App() {
   return (
     <>
@@ -16,6 +18,7 @@ export default function App() {
       {/* <Personal_details /> */}
       {/* <OTP /> */}
       <Stack_Navigation />
+      {/* <Tab_Navigation /> */}
       {/* <Cart /> */}
       {/* <Catergories /> */}
       {/* <DashBoardScreen /> */}

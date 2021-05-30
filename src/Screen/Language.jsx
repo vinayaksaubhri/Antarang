@@ -1,9 +1,10 @@
 import React from 'react';
+import { TouchableOpacity } from 'react-native';
 import { Tag, Title, UpperBox } from '../../style/Language';
 import Button from '../Components/Button';
 import Box_lang from '../Components/Box';
 import { Global_container } from '../../style/global';
-const Language = () => {
+const Language = (props) => {
   return (
     <Global_container>
       <Tag>
@@ -20,7 +21,9 @@ const Language = () => {
         <Box_lang SubTitle_box="English" SubTitlebar_box="Gujarati" />
         <Box_lang SubTitle_box="English" SubTitlebar_box="Bangla" />
       </UpperBox>
-      <Button Title="Continue" />
+      <TouchableOpacity onPress={() => props.navigation.navigate('Role')}>
+        <Button Title="Continue" />
+      </TouchableOpacity>
     </Global_container>
   );
 };

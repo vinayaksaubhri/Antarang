@@ -45,10 +45,10 @@ const OTP = (props) => {
                 <Input keyboardType="numeric" />
                 <Para>*Enter OTP sent to your registered mobile number linked with ration card</Para>
               </View>
-              <TouchableOpacity onPress={() => props.navigation.navigate('Cart')}>
-                <Button Title="Continue" />
-              </TouchableOpacity>
             </Lower_box>
+            <TouchableOpacity onPress={() => props.navigation.navigate('DashBoardScreen')}>
+              <Button Title="Continue" />
+            </TouchableOpacity>
           </ScrollView>
         </KeyboardAvoidingView>
       </Global_container>
