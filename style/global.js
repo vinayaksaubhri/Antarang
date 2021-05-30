@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 import Constants from 'expo-constants';
 import { Color } from './color';
 
@@ -28,4 +28,17 @@ export const ButtonText = styled.Text`
   font-size: 16px;
   color: ${Color.White};
   align-self: center;
+`;
+export const Input = styled.TextInput`
+  width: 305px;
+  height: 40px;
+  background-color: ${Color.White};
+  border-radius: 6px;
+`;
+
+export const Search_view = styled.View`
+  flex-direction: row;
+  align-items: center;
+  background-color: ${Color.White};
+  border-radius: 6px;
 `;
