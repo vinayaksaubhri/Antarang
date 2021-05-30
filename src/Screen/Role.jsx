@@ -13,7 +13,7 @@ const Role = (props) => {
       <Heading>Select your role</Heading>
       <Sub_heading>I would like to...</Sub_heading>
       <Svg_box>
-        <TouchableOpacity onPress={() => props.navigation.navigate('OTP')}>
+        <TouchableOpacity onPress={() => props.navigation.navigate('Location')}>
           <Image style={{ width: 140, height: 140 }} source={require('../../assets/Images/Get_support.png')} />
         </TouchableOpacity>
         <Get_text>Get Support</Get_text>
@@ -22,7 +22,7 @@ const Role = (props) => {
         <OrLine />
       </View>
       <Svg_box>
-        <TouchableOpacity onPress={() => props.navigation.navigate('OTP')}>
+        <TouchableOpacity onPress={() => props.navigation.navigate('Location')}>
           <Image style={{ width: 140, height: 140 }} source={require('../../assets/Images/Donate.png')} />
         </TouchableOpacity>
         <Get_text>Donate</Get_text>

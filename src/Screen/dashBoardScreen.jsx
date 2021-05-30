@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, ScrollView } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
 import Electric from '../../assets/Svg/Electric';
 import Gas from '../../assets/Svg/Gas';
 import Home from '../../assets/Svg/Home';
@@ -18,7 +18,7 @@ import ProfileName from '../Components/ProfileName';
 import RecentTransactions from '../Components/RecentTransactions';
 import Utilites_icon from '../Components/UtilitesIcon';
 
-const dashBoardScreen = () => {
+const dashBoardScreen = (props) => {
   return (
     <Dashboard_container>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -53,7 +53,9 @@ Do not hesitate to buy supplies bills. All payments are interest free and       
 
         <TitleText>Manage Utilites</TitleText>
         <UtilitesContainer>
-          <Utilites_icon App_icon={<Supplies />} />
+          <TouchableOpacity onPress={() => props.navigation.navigate('Catergories')}>
+            <Utilites_icon App_icon={<Supplies />} props />
+          </TouchableOpacity>
           <Utilites_icon App_icon={<Electric />} />
           <Utilites_icon App_icon={<Gas />} />
           <Utilites_icon App_icon={<Electric />} />

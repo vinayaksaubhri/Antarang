@@ -44,3 +44,10 @@ export const Search_view = styled.View`
   background-color: ${Color.White};
   border-radius: 6px;
 `;
+
+export const Tab_view = styled.View`
+  flex: 1;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+`;

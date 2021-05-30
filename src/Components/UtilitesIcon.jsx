@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { TouchableOpacity } from 'react-native';
 
 import Home from '../../assets/Svg/Home';
 import { Icon, IconContainer, Icon_Text } from '../../style/dashboard';

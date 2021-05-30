@@ -4,11 +4,9 @@ import { ButtonView, ButtonText } from '../../style/global';
 
 const Button = ({ Title }) => {
   return (
-    <TouchableOpacity>
-      <ButtonView>
-        <ButtonText>{Title}</ButtonText>
-      </ButtonView>
-    </TouchableOpacity>
+    <ButtonView>
+      <ButtonText>{Title}</ButtonText>
+    </ButtonView>
   );
 };
 

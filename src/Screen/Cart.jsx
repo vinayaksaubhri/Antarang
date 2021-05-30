@@ -39,7 +39,7 @@ import {
 } from '../../style/cart';
 import Search from '../Components/Search';
 
-const Cart = () => {
+const Cart = (props) => {
   const [modal, setmodal] = useState(false);
   const [Inner_modal, setInner_modal] = useState(false);
   BackHandler.addEventListener('hardwareBackPress', function () {
@@ -211,7 +211,8 @@ const Cart = () => {
                       </Sub_header>
                     </View>
                   </View>
-                  <Button title="Button" />
+
+                  <Button title="Button" onPress={() => props.navigation.navigate('Recipt')} />
                 </Modal_view>
               </View>
             </Modal>

@@ -17,8 +17,9 @@ import Spices from '../../assets/Svg/Spices';
 import Dairy from '../../assets/Svg/Dairy';
 import Bevereges from '../../assets/Svg/Beverages';
 import Mask from '../../assets/Svg/Mask';
+import { TouchableOpacity } from 'react-native';
 
-const Categories = () => {
+const Categories = (props) => {
   return (
     <Global_container>
       <Upper_flex>
@@ -41,7 +42,9 @@ const Categories = () => {
         </Flex_container>
       </Lower_flex>
       <View style={{ alignItems: 'center' }}>
-        <Button_catagories />
+        <TouchableOpacity onPress={() => props.navigation.navigate('Cart')}>
+          <Button_catagories />
+        </TouchableOpacity>
       </View>
     </Global_container>
   );
