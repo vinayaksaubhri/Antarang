@@ -7,7 +7,7 @@ import ProfileName from '../Components/ProfileName';
 import Search from '../Components/Search';
 import { TitleText } from '../../style/dashboard';
 import Button_catagories from '../Components/Button_catagories';
-import { KeyboardAvoidingView, View } from 'react-native';
+import { View } from 'react-native';
 import Flour from '../../assets/Svg/Flour';
 import Pluses from '../../assets/Svg/Pluses';
 import Rice from '../../assets/Svg/Rice';
@@ -17,8 +17,6 @@ import Spices from '../../assets/Svg/Spices';
 import Dairy from '../../assets/Svg/Dairy';
 import Bevereges from '../../assets/Svg/Beverages';
 import Mask from '../../assets/Svg/Mask';
-import { ScrollView } from 'react-native-gesture-handler';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
 const Categories = () => {
   return (
